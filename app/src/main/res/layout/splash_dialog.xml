@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp540"
+        android:layout_above="@+id/txt_bottom"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+
+    <com.splashview.CountDownView
+        android:id="@+id/count_down_view"
+        android:layout_width="@dimen/dp39"
+        android:layout_height="@dimen/dp39"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        app:background_color="@color/M8800000"
+        app:borders_color="@color/M45E3BF"
+        app:borders_width="@dimen/dp3"
+        app:text_size="@dimen/sp10" />
+
+    <TextView
+        android:id="@+id/txt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp125"
+        android:layout_alignParentBottom="true"
+        android:background="@color/MF4F4F4"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:drawableStart="@mipmap/ic_launcher"
+        android:paddingEnd="0dp"
+        android:paddingLeft="@dimen/dp116"
+        android:paddingRight="0dp"
+        android:paddingStart="@dimen/dp116" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp23"
+        android:text="这里放你想放的"
+        android:textColor="@color/M2E2E2E"
+        android:textSize="@dimen/sp9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_bottom"
+        android:paddingEnd="0dp"
+        android:paddingLeft="@dimen/dp185"
+        android:paddingRight="0dp"
+        android:paddingStart="@dimen/dp185"
+        android:paddingTop="@dimen/dp34"
+        android:text="软件的名称"
+        android:textColor="@color/M3C3C3C"
+        android:textSize="@dimen/sp24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/dp40"
+        android:paddingEnd="0dp"
+        android:paddingLeft="@dimen/dp185"
+        android:paddingRight="0dp"
+        android:paddingStart="@dimen/dp185"
+        android:text="这里放软件的介绍"
+        android:textColor="@color/M3C3C3C"
+        android:textSize="@dimen/sp12" />
+
+</RelativeLayout>
