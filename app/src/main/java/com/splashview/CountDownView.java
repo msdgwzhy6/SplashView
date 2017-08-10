@@ -29,6 +29,10 @@ public class CountDownView extends View {
     private static final float TEXT_SIZE = 50f;
     private static final int TEXT_COLOR = 0xFFFFFFFF;
 
+    int width;
+    int height;
+    int min;
+
     private int backgroundColor;
     private float borderWidth;
     private int borderColor;
@@ -109,10 +113,15 @@ public class CountDownView extends View {
     }
 
     @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        width=w;
+        height=h;
+        min = Math.min(width, height);
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
-        int width = getMeasuredWidth();
-        int height = getMeasuredHeight();
-        int min = Math.min(width, height);
         //画底盘
         canvas.drawCircle(width / 2, height / 2, min / 2, circlePaint);
         //画边框
